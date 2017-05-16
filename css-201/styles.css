@@ -1,0 +1,47 @@
+h1{
+	color: red;
+}
+
+.square{
+	height: 200px;
+	width: 200px;
+	background-color: #ffff00;
+	border: 2px solid black;
+	transition:  all 2s;
+}
+
+.square:hover{
+	background-color:  red;
+	border-radius: 50%;
+}
+
+.transform-box{
+	height: 100px;
+	width: 100px;
+	border:  1px red solid;
+	margin-top:  20px;
+/* 	transition:  all 2s; */
+}
+
+.transform-box:hover{
+	margin-left:  500px;
+	border-radius:  50%;
+	background-color: black;
+	transform:  rotate(1000deg);
+}
+
+.ease{
+	transition:  all 4s ease-in;
+}
+.ease-out{
+	transition:  all 4s ease-out;
+}
+.custom{
+	transition:  all 4s;
+	transition-timing-function:  cubic-bezier(1.000, 0.835,0.000,0.945);
+}
+
+
+
+
+
