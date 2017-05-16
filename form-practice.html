@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form-Practice</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="newform.js"></script>
+	<!-- <script type="text/javascript" src="scripts.js"></script> -->
+	<style>
+	 #header {
+	 	background-color: lightcyan;
+	 	color: black;
+	 	border: 3px solid black;
+	 	text-align: center;
+	 }
+	 #full-name, #address, #email, #phone, #password, #password-conf, #tech-skills, #Experience-Yrs,#T-P{
+	 	text-align: center;
+	 	background-color: lightcoral;
+	 	font-weight: bold;
+	 	border:  1px groove grey;
+	 }
+
+	 .row-section-5{
+	 	margin-top: 46px;
+	 	text-align: center;
+	 }
+	
+	</style>
+</head>
+<body>
+
+<div class="container">
+<form class=sign-up-form>
+	<div class=" col-md-6 col-md-offset-3">
+		<div class="row">
+			<div id="header">
+				<h1><strong>Sign up now!</strong></h1>
+				<h6><strong> Sign up for the dev job of your dreams!</strong></h6>
+			</div>
+			<div class="row-section-1">
+				<div id=header1>
+				<h3><strong>1. First Name and Address</strong></h3>
+				</div>
+				<div id="full-name">
+					Full Name
+					<input placeholder="Full Name"></input>
+				</div>
+					<div id="address">
+						Address
+						<input placeholder= "Address"></input>
+					</div>
+			</div>
+				<div class="row-section-2">
+					<h3><strong>2. Contact Info</strong></h3>
+					<div id="email">
+						Email
+						<input placeholder="Email"></input>
+					</div>
+					<div id="phone">
+						Phone
+						<input placeholder="Phone"></input>
+					</div>
+				</div>
+					<div class="row-section-3">
+						<h3><strong>3. Password</h3></strong>
+						<div id="password">
+							Password
+							<input placeholder= "Password"></input>
+						</div>
+						<div id="password-conf">
+							Password Conf.
+							<input placeholder= "Password Conf."></input>
+						</div>
+					</div>
+						<div class="row-section-4">
+						<h3><strong>4. Skills</strong></h3>
+							<div id="tech-skills">
+								 Tech Skills
+								<input placeholder= "Tech Skills"></input>
+							</div>
+							<div id="Experience-Yrs">
+								Yrs of Experience
+								<input placeholder= "Yrs of Experience"></input>
+							</div>
+						</div>	
+							<div class="row-section-5">
+								<button type=submit>Get me a job!</button>
+									<button type= " "><input placeholder= " "></input></button>
+								<div id="T-P">
+								I agree to the terms and policies
+								</div>
+							</div>
+
+
+					
+		</div>
+	</div>
+
+
+</form>
+</div>
+
+</body>
+</html>
