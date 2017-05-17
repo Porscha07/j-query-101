@@ -6,6 +6,35 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="scripts.js"></script>
 		<style>
+
+		 #your-name, #your-email, #about-yourself, #interests, #about-your-school,#Additional-info,#button, #candidate-info{
+		 	text-align: center;
+		 	font-weight: bold;
+		 }
+
+		 	#your-name, #your-email,#about-yourself, #interests, #about-your-school,#button, #candidate-info, #Additional-info{
+		 		margin-bottom: 30px;
+		 	}
+
+		 	#candidate-info, #Additional-info{
+		 		background-color: lightgoldenrodyellow;
+		 		border: 2px groove black;
+		 	}
+
+		 	 #button{
+		 		position: relative;
+		 		left:  150px;
+		 		height: 50px;
+		 		width: 100px;
+		 		background-color: lightcoral;
+		 		border: groove black;
+		 		/* text-align: center; */
+		 	}
+
+		 	.sign-up-form{
+		 		background-color: lightcyan;
+		 	}
+		 	
 		</style>
 
 </head>
@@ -14,18 +43,19 @@
 	<form class="sign-up-form">
 		<div class = "col-md-6 col-md-offset-3">
 			<div class ="row-section-1">
-			<!-- <div class = "candidate-info-error error"> Your information is incorrect</div> -->
-				<h1><strong><label>1. Candidate Info</label></strong></h1>
+			<div class = "candidate-info-error error"></div>
+				<div id="candidate-info">
+					<h1><strong><label>1. Candidate Info</label></strong></h1>
+				</div>
 			</div>
-				<div id = "your-name">Your Name *<input placeholder=" Your Name"> 
+				<div id = "your-name">Your Name *<input type="text" placeholder=  "Your Name">
 				</div>
-				<div id = "your-email">Your Email *<input placeholder=" Your Email"> 
+				<div id = "your-email">Your Email *<input type="email" placeholder=" Your Email"> 
 				</div>
-				<div id = "about-yourself">About Yourself *<input placeholder="About Yourself"> 
+				<div id = "about-yourself">About Yourself *<input type="text" placeholder="About Yourself"> 
 				</div>
 				<div id = "interests">Interests:	
-				<select name="" multiple>
-					<optgroup label="Interests:">
+				<select form="sign-up-form">
 						<option value="Movies">Movies</option>
 						<option value="Reading">Reading</option>
 						<option value="Coding">Coding</option>
@@ -33,19 +63,24 @@
 						<option value="Exploring the City">Exploring the City</option>
 						<option value="Cooking">Cooking</option>
 						<option value="Art">Art</option>
-					</optgroup>
 				</select>
 				</div>
 			</div>
 				 	<div class = "row-section-2">
-				 		<h1><strong><label>2. Additional Info</label></strong></h1>
-				 	</div>
-				 		<div id = "about-your-school">About Your School*<input placeholder="About Your School"> 
+				 		<div id="Additional-info">
+				 			<h1><strong><label>2. Additional Info</label></strong></h1>
 				 		</div>
 				 	</div>
-				 		<div class = "row-section-3"
+				 		<div id = "about-your-school">About Your School*<input  type="text"placeholder="About Your School"> 
+				 		</div>
+				 	</div>
+				 		<div class = "row-section-3">
 				 			<div id="button">
-							<button type="submit" id= "button">Apply</button>
+								<button type="submit" id= "button">Apply</button>
+							</div>
+	</form>
+
+
 
 
 
