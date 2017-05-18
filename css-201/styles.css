@@ -7,12 +7,19 @@ h1{
 	width: 200px;
 	background-color: #ffff00;
 	border: 2px solid black;
+	/* transform:translate(0px,0px); */
+	transform:  scale(2);
 	transition:  all 2s;
 }
 
 .square:hover{
 	background-color:  red;
 	border-radius: 50%;
+	scale down 20% both x and y
+	transform: scale(2);
+	/* scale x down 20%, scale up  */
+
+	transform : translateX(1000px);
 }
 
 .transform-box{
@@ -20,7 +27,7 @@ h1{
 	width: 100px;
 	border:  1px red solid;
 	margin-top:  20px;
-/* 	transition:  all 2s; */
+	transition:  all 2s;
 }
 
 .transform-box:hover{
